@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aline Bertoldo — Especialista em Estética do Olhar e Unhas com quase 20 anos de experiência. Atendimento Home Care de alto padrão na Grande São Paulo." />
+  <meta property="og:title" content="Aline Bertoldo | Estética Premium" />
+  <meta property="og:description" content="Design de sobrancelhas, cílios e unhas. Atendimento domiciliar de luxo em São Paulo." />
+
+  <title>Aline Bertoldo | Estética Premium</title>
+
+  <!-- Google Fonts: Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================
+       HEADER & MENU DE NAVEGAÇÃO
+       Fixo no topo; no mobile abre com slide-down
+       ============================================ -->
+  <header class="header" id="header" role="banner">
+    <div class="header__inner container">
+
+      <!-- Logotipo -->
+      <a href="#inicio" class="logo" aria-label="Aline Bertoldo — Voltar ao início">
+        <span class="logo__name">Aline Bertoldo</span>
+        <span class="logo__tagline">Estética Premium</span>
+      </a>
+
+      <!-- Botão hamburguer (visível apenas no mobile) -->
+      <button class="menu-toggle" id="menuToggle"
+              aria-label="Abrir menu de navegação"
+              aria-controls="nav"
+              aria-expanded="false">
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+      </button>
+
+      <!-- Navegação principal -->
+      <nav class="nav" id="nav" role="navigation" aria-label="Menu principal">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#inicio"            class="nav__link">Início</a></li>
+          <li class="nav__item"><a href="#sobrancelhas"      class="nav__link">Sobrancelhas &amp; Cílios</a></li>
+          <li class="nav__item"><a href="#unhas"             class="nav__link">Unhas &amp; Bem-Estar</a></li>
+          <li class="nav__item"><a href="#aulas"             class="nav__link">Aulas &amp; Podcasts</a></li>
+          <li class="nav__item nav__item--cta">
+            <a href="#agendamento" class="nav__link nav__link--cta">Agendamento</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================
+         SEÇÃO HERO
+         ============================================ -->
+    <section class="hero" id="inicio" aria-label="Apresentação">
+
+      <!-- Camadas de fundo decorativas (gradiente + textura) -->
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__bg-gradient"></div>
+        <div class="hero__bg-pattern"></div>
+      </div>
+
+      <!-- Elemento decorativo: anéis concêntricos lado direito -->
+      <div class="hero__deco" aria-hidden="true">
+        <div class="hero__deco-ring hero__deco-ring--1"></div>
+        <div class="hero__deco-ring hero__deco-ring--2"></div>
+        <div class="hero__deco-ring hero__deco-ring--3"></div>
+        <div class="hero__deco-center"></div>
+      </div>
+
+      <!-- Conteúdo principal do hero -->
+      <div class="hero__content container">
+        <p class="hero__eyebrow">Home Care · Grande São Paulo</p>
+
+        <h1 class="hero__title">
+          A Arte de Revelar<br>
+          <em>Sua Beleza Natural</em>
+        </h1>
+
+        <p class="hero__subtitle">
+          Quase 20 anos de expertise em estética do olhar e cuidado com as unhas —
+          levados até você, com elegância e segurança, onde quer que você esteja
+          na metrópole paulista.
+        </p>
+
+        <a href="#agendamento" class="btn btn--primary btn--hero">
+          <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/>
+          </svg>
+          Agendar Atendimento
+        </a>
+      </div>
+
+      <!-- Indicador visual de scroll -->
+      <div class="hero__scroll" aria-hidden="true">
+        <span class="hero__scroll-line"></span>
+      </div>
+
+    </section>
+
+
+    <!-- ============================================
+         SEÇÃO: SOBRANCELHAS & CÍLIOS
+         ============================================ -->
+    <section class="services-section" id="sobrancelhas" aria-labelledby="title-sobrancelhas">
+      <div class="container">
+
+        <header class="section-header animate-on-scroll">
+          <span class="section-label">Especialidade</span>
+          <h2 class="section-title" id="title-sobrancelhas">Sobrancelhas &amp; Cílios</h2>
+          <p class="section-description">
+            Cada rosto conta uma história única. Com técnicas de visagismo e precisão
+            artística, redefino o seu olhar com naturalidade e sofisticação.
+          </p>
+        </header>
+
+        <div class="services-grid">
+
+          <article class="service-card animate-on-scroll">
+            <div class="service-card__icon" aria-hidden="true">◈</div>
+            <h3 class="service-card__title">Design Personalizado</h3>
+            <p class="service-card__text">
+              Análise de visagismo facial completa para criar o design ideal
+              que realça e harmoniza as suas proporções naturais.
+            </p>
+          </article>
+
+          <article class="service-card animate-on-scroll">
+            <div class="service-card__icon" aria-hidden="true">◈</div>
+            <h3 class="service-card__title">Epilação Egípcia</h3>
+            <p class="service-card__text">
+              Técnica milenar de remoção com linha de algodão — precisa,
+              delicada e ideal para peles sensíveis.
+            </p>
+          </article>
+
+          <article class="service-card animate-on-scroll">
+            <div class="service-card__icon" aria-hidden="true">◈</div>
+            <h3 class="service-card__title">Brow Lamination</h3>
+            <p class="service-card__text">
+              Alinhamento e fixação dos fios para sobrancelhas volumosas,
+              ordenadas e com aspecto fio a fio por semanas.
+            </p>
+          </article>
+
+          <article class="service-card animate-on-scroll">
+            <div class="service-card__icon" aria-hidden="true">◈</div>
+            <h3 class="service-card__title">Nanoblading</h3>
+            <p class="service-card__text">
+              Micropigmentação em hiper-realismo com pigmentos de alta qualidade,
+              simulando fios individuais com naturalidade impressionante.
+            </p>
+          </article>
+
+          <article class="service-card animate-on-scroll">
+            <div class="service-card__icon" aria-hidden="true">◈</div>
+            <h3 class="service-card__title">Lash Lifting</h3>
+            <p class="service-card__text">
+              Curvatura permanente dos cílios naturais para um olhar mais aberto
+              e expressivo, sem necessidade de máscara diária.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         SEÇÃO: UNHAS & BEM-ESTAR
+         ============================================ -->
+    <section class="services-section services-section--alt" id="unhas" aria-labelledby="title-unhas">
+      <div class="container">
+
+        <header class="section-header animate-on-scroll">
+          <span class="section-label">Especialidade</span>
+          <h2 class="section-title" id="title-unhas">Unhas &amp; Bem-Estar</h2>
+          <p class="section-description">
+            Do cuidado estético ao cuidado clínico. Técnicas modernas que
+            aliam durabilidade, beleza e, acima de tudo, saúde.
+          </p>
+        </header>
+
+        <div class="services-grid">
+
+          <article class="service-card animate-on-scroll">
+            <div class="service-card__icon" aria-hidden="true">◈</div>
+            <h3 class="service-card__title">Unhas em Gel</h3>
+            <p class="service-card__text">
+              Blindagem para unhas naturais e alongamento personalizado.
+              Alta durabilidade, brilho intenso e aspecto impecável.
+            </p>
+          </article>
+
+          <article class="service-card animate-on-scroll">
+            <div class="service-card__icon" aria-hidden="true">◈</div>
+            <h3 class="service-card__title">Manicure Russa</h3>
+            <p class="service-card__text">
+              Procedimento a seco com micromotor — remoção precisa de cutículas,
+              resultado duradouro e higienicamente superior.
+            </p>
+          </article>
+
+          <!-- Card de destaque clínico -->
+          <article class="service-card service-card--highlight animate-on-scroll">
+            <span class="service-card__badge">Diferencial Clínico</span>
+            <div class="service-card__icon service-card__icon--heart" aria-hidden="true">♥</div>
+            <h3 class="service-card__title">Atendimento para Diabéticos</h3>
+            <p class="service-card__text">
+              Protocolo especializado e seguro para pacientes diabéticos.
+              Técnicas adaptadas que priorizam a saúde vascular e a segurança
+              integral — com todo o cuidado e atenção que você merece.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         SEÇÃO: AULAS, VÍDEOS & PODCASTS
+         ============================================ -->
+    <section class="media-section" id="aulas" aria-labelledby="title-aulas">
+      <div class="container">
+
+        <header class="section-header animate-on-scroll">
+          <span class="section-label">Conteúdo</span>
+          <h2 class="section-title" id="title-aulas">Aulas, Vídeos &amp; Podcasts</h2>
+          <p class="section-description">
+            Conhecimento que transforma. Conteúdo exclusivo para profissionais
+            e entusiastas da beleza.
+          </p>
+        </header>
+
+        <div class="media-grid">
+
+          <!-- Card 1: Aula -->
+          <article class="media-card animate-on-scroll">
+            <!-- Placeholder para thumbnail — substitua por <img> com a imagem real do vídeo -->
+            <div class="media-card__thumbnail" role="img" aria-label="Thumbnail: Design de Sobrancelhas">
+              <div class="media-card__play-wrap" aria-hidden="true">
+                <svg class="media-card__play-icon" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M8 5v14l11-7z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="media-card__body">
+              <span class="media-card__type">Aula</span>
+              <h3 class="media-card__title">Design de Sobrancelhas: O Guia do Visagismo</h3>
+              <p class="media-card__desc">
+                Aprenda a identificar o formato ideal para cada tipo de rosto e
+                aplicar técnicas profissionais de mapeamento.
+              </p>
+              <a href="https://youtube.com/@alinebertoldo" target="_blank" rel="noopener noreferrer"
+                 class="btn btn--outline btn--sm" aria-label="Assistir aula no YouTube">
+                <!-- Ícone do YouTube -->
+                <svg class="btn__icon btn__icon--yt" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="currentColor" d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/>
+                </svg>
+                Assistir Aula
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2: Podcast -->
+          <article class="media-card animate-on-scroll">
+            <div class="media-card__thumbnail" role="img" aria-label="Thumbnail: Segurança para Diabéticos">
+              <div class="media-card__play-wrap" aria-hidden="true">
+                <svg class="media-card__play-icon" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M8 5v14l11-7z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="media-card__body">
+              <span class="media-card__type">Podcast</span>
+              <h3 class="media-card__title">Segurança no Atendimento: Diabéticos e a Estética</h3>
+              <p class="media-card__desc">
+                Uma conversa aprofundada sobre protocolos de segurança e a
+                humanização no atendimento especializado.
+              </p>
+              <a href="https://youtube.com/@alinebertoldo" target="_blank" rel="noopener noreferrer"
+                 class="btn btn--outline btn--sm" aria-label="Ouvir podcast no YouTube">
+                <svg class="btn__icon btn__icon--yt" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="currentColor" d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/>
+                </svg>
+                Ouvir Podcast
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 3: Aula -->
+          <article class="media-card animate-on-scroll">
+            <div class="media-card__thumbnail" role="img" aria-label="Thumbnail: Manicure Russa">
+              <div class="media-card__play-wrap" aria-hidden="true">
+                <svg class="media-card__play-icon" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M8 5v14l11-7z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="media-card__body">
+              <span class="media-card__type">Aula</span>
+              <h3 class="media-card__title">Manicure Russa: Do Zero ao Profissional</h3>
+              <p class="media-card__desc">
+                Técnica completa com micromotor, desde a escolha dos instrumentos
+                até o acabamento perfeito e a higienização correta.
+              </p>
+              <a href="https://youtube.com/@alinebertoldo" target="_blank" rel="noopener noreferrer"
+                 class="btn btn--outline btn--sm" aria-label="Assistir aula no YouTube">
+                <svg class="btn__icon btn__icon--yt" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="currentColor" d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/>
+                </svg>
+                Assistir Aula
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 4: Podcast -->
+          <article class="media-card animate-on-scroll">
+            <div class="media-card__thumbnail" role="img" aria-label="Thumbnail: Nanoblading">
+              <div class="media-card__play-wrap" aria-hidden="true">
+                <svg class="media-card__play-icon" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M8 5v14l11-7z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="media-card__body">
+              <span class="media-card__type">Podcast</span>
+              <h3 class="media-card__title">Nanoblading: Arte &amp; Técnica no Hiper-realismo</h3>
+              <p class="media-card__desc">
+                Os segredos por trás do traço perfeito, a escolha de pigmentos
+                e como criar resultados verdadeiramente naturais.
+              </p>
+              <a href="https://youtube.com/@alinebertoldo" target="_blank" rel="noopener noreferrer"
+                 class="btn btn--outline btn--sm" aria-label="Ouvir podcast no YouTube">
+                <svg class="btn__icon btn__icon--yt" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="currentColor" d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/>
+                </svg>
+                Ouvir Podcast
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         SEÇÃO: AGENDAMENTO INTELIGENTE
+         ============================================ -->
+    <section class="scheduling-section" id="agendamento" aria-labelledby="title-agendamento">
+      <div class="container">
+
+        <header class="section-header animate-on-scroll">
+          <span class="section-label">Agendamento</span>
+          <h2 class="section-title" id="title-agendamento">Reserve o Seu Horário</h2>
+          <p class="section-description">
+            Escolha o mês, selecione o dia e o horário. Ao confirmar, você será
+            direcionado diretamente ao nosso WhatsApp para finalizar o agendamento.
+          </p>
+        </header>
+
+        <div class="calendar-wrapper animate-on-scroll">
+
+          <!-- 1. Grade de meses (gerada por JS) -->
+          <div class="month-selector" id="monthSelector" role="group" aria-label="Selecione o mês">
+            <!-- Preenchido dinamicamente por script.js -->
+          </div>
+
+          <!-- 2. Calendário do mês selecionado (gerado por JS) -->
+          <div class="calendar-view" id="calendarView" aria-live="polite" aria-atomic="true">
+            <div class="calendar-placeholder">
+              <svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true" style="opacity:.35;margin-bottom:.75rem">
+                <path fill="currentColor" d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/>
+              </svg>
+              <span>Selecione um mês para ver os dias disponíveis</span>
+            </div>
+          </div>
+
+          <!-- 3. Horários disponíveis (gerado por JS, oculto até um dia ser selecionado) -->
+          <div class="time-selector" id="timeSelector" hidden aria-live="polite">
+            <h3 class="time-selector__title">
+              Horários disponíveis —
+              <span id="selectedDateLabel" class="time-selector__date"></span>
+            </h3>
+            <div class="time-grid" id="timeGrid" role="group" aria-label="Selecione um horário">
+              <!-- Preenchido dinamicamente por script.js -->
+            </div>
+          </div>
+
+          <!-- 4. CTA de confirmação (gerado por JS, oculto até horário ser selecionado) -->
+          <div class="scheduling-cta" id="schedulingCta" hidden>
+            <p class="scheduling-cta__summary" id="ctaSummary" aria-live="polite"></p>
+            <button class="btn btn--primary btn--lg" id="confirmBtn" type="button">
+              <!-- Ícone do WhatsApp -->
+              <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                <path fill="currentColor" d="M12.004 2C6.477 2 2 6.477 2 12.004c0 1.769.463 3.43 1.27 4.876L2 22l5.234-1.244A9.963 9.963 0 0 0 12.004 22C17.531 22 22 17.523 22 12.004 22 6.477 17.531 2 12.004 2zm0 18.214a8.195 8.195 0 0 1-4.215-1.163l-.303-.18-3.107.738.772-3.028-.198-.311A8.196 8.196 0 0 1 3.786 12c0-4.532 3.686-8.214 8.218-8.214S20.218 7.472 20.218 12c0 4.528-3.682 8.214-8.214 8.214z"/>
+              </svg>
+              Confirmar Agendamento via WhatsApp
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer__inner">
+
+        <!-- Identidade -->
+        <div class="footer__brand">
+          <span class="logo__name">Aline Bertoldo</span>
+          <span class="logo__tagline">Estética Premium · Home Care · SP</span>
+        </div>
+
+        <!-- Redes sociais -->
+        <nav class="footer__social" aria-label="Redes sociais">
+          <a href="https://instagram.com/alineb.brows" target="_blank"
+             rel="noopener noreferrer" class="social-link"
+             aria-label="Instagram de Aline Bertoldo: @alineb.brows">
+            <!-- Ícone Instagram -->
+            <svg class="social-link__icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            @alineb.brows
+          </a>
+        </nav>
+
+      </div>
+
+      <!-- Rodapé legal -->
+      <div class="footer__bottom">
+        <p>&copy; <span id="footerYear"></span> Aline Bertoldo Estética Premium.
+          Todos os direitos reservados.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
