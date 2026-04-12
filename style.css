@@ -1072,3 +1072,271 @@ h1, h2, h3, h4 {
     align-items: center;
   }
 }
+
+
+/* ============================================================
+   14. FOOTER — LEGAL LINK
+   ============================================================ */
+.footer__legal-link {
+  display: inline-block;
+  margin-top: 0.625rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  transition: color var(--t-fast);
+  border-bottom: 1px solid transparent;
+}
+.footer__legal-link:hover {
+  color: var(--c-gold);
+  border-bottom-color: var(--c-gold);
+}
+
+
+/* ============================================================
+   15. LEGAL PAGE — OVERLAY & CONTENT
+   ============================================================ */
+
+/* --- Overlay (full-screen takeover) --- */
+.legal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background-color: var(--c-bg);
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+.legal-overlay.is-active {
+  display: block;
+  opacity: 1;
+}
+
+/* --- Legal page wrapper --- */
+.legal-page {
+  width: 100%;
+  max-width: 820px;
+  margin-inline: auto;
+  padding: var(--sp-xl) 1.5rem var(--sp-2xl);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- Header with back button --- */
+.legal-page__header {
+  padding-bottom: var(--sp-lg);
+  border-bottom: 1px solid var(--c-border);
+  margin-bottom: var(--sp-xl);
+}
+
+.legal-page__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  background: none;
+  border: 1px solid var(--c-border);
+  border-radius: var(--r-full);
+  font-family: var(--font);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--c-text-mid);
+  cursor: pointer;
+  transition: all var(--t-mid);
+  letter-spacing: 0.02em;
+}
+.legal-page__back:hover {
+  border-color: var(--c-wine);
+  color: var(--c-wine);
+  background-color: var(--c-wine-pale);
+  transform: translateX(-3px);
+}
+
+/* --- Title block --- */
+.legal-page__title-block {
+  text-align: center;
+  margin-bottom: var(--sp-xl);
+}
+
+.legal-page__title {
+  font-size: clamp(1.6rem, 3.5vw, 2.25rem);
+  font-weight: 700;
+  color: var(--c-graphite);
+  line-height: 1.2;
+  margin-top: 0.875rem;
+  margin-bottom: 0.75rem;
+}
+
+.legal-page__updated {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--c-text-lt);
+  letter-spacing: 0.04em;
+}
+
+/* --- Intro paragraph --- */
+.legal-page__intro {
+  font-size: 1rem;
+  color: var(--c-text-mid);
+  line-height: 1.85;
+  margin-bottom: var(--sp-xl);
+  padding: var(--sp-md);
+  background: linear-gradient(135deg, var(--c-wine-pale), var(--c-gold-pale));
+  border-radius: var(--r-lg);
+  border-left: 3px solid var(--c-wine);
+}
+.legal-page__intro strong {
+  color: var(--c-graphite);
+}
+
+/* --- Legal content sections --- */
+.legal-page__content {
+  flex: 1;
+}
+
+.legal-section {
+  margin-bottom: var(--sp-xl);
+}
+
+.legal-section__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--c-graphite);
+  margin-bottom: var(--sp-md);
+  padding-bottom: 0.625rem;
+  border-bottom: 2px solid var(--c-border);
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+.legal-section__title::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 1.25rem;
+  background: linear-gradient(180deg, var(--c-wine), var(--c-gold));
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.legal-section__subtitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--c-wine);
+  margin-top: var(--sp-md);
+  margin-bottom: 0.5rem;
+}
+
+.legal-section p {
+  font-size: 0.9rem;
+  color: var(--c-text-mid);
+  line-height: 1.85;
+  margin-bottom: 0.75rem;
+}
+.legal-section strong {
+  color: var(--c-graphite);
+  font-weight: 600;
+}
+
+/* --- Legal list --- */
+.legal-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.legal-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--c-text-mid);
+  line-height: 1.85;
+  margin-bottom: 0.375rem;
+}
+.legal-list li::before {
+  content: '◈';
+  position: absolute;
+  left: 0;
+  color: var(--c-gold);
+  font-size: 0.7rem;
+  top: 3px;
+}
+
+/* --- Contact card --- */
+.legal-contact {
+  margin-top: var(--sp-sm);
+  padding: var(--sp-md) var(--sp-md);
+  background-color: var(--c-white);
+  border: 1px solid var(--c-border);
+  border-radius: var(--r-lg);
+  box-shadow: var(--sh-sm);
+}
+.legal-contact p {
+  font-size: 0.875rem;
+  margin-bottom: 0.375rem;
+  line-height: 1.75;
+}
+.legal-contact p:last-child {
+  margin-bottom: 0;
+}
+.legal-contact a {
+  color: var(--c-wine);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--t-fast), color var(--t-fast);
+}
+.legal-contact a:hover {
+  border-bottom-color: var(--c-wine);
+  color: var(--c-wine-lt);
+}
+
+/* --- Footer (back button at bottom) --- */
+.legal-page__footer {
+  text-align: center;
+  margin-top: var(--sp-xl);
+  padding-top: var(--sp-lg);
+  border-top: 1px solid var(--c-border);
+}
+
+
+/* ============================================================
+   16. LEGAL PAGE — RESPONSIVIDADE
+   ============================================================ */
+@media (max-width: 768px) {
+  .legal-page {
+    padding: var(--sp-lg) 1.25rem var(--sp-xl);
+  }
+
+  .legal-page__header {
+    margin-bottom: var(--sp-lg);
+  }
+
+  .legal-page__intro {
+    padding: var(--sp-sm);
+    font-size: 0.9rem;
+  }
+
+  .legal-section__title {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .legal-page {
+    padding: var(--sp-md) 1rem var(--sp-lg);
+  }
+
+  .legal-page__back {
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .legal-contact {
+    padding: var(--sp-sm);
+  }
+}
